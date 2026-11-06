@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Student Portfolio</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fc;
+    color: #222;
+}
+
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: #00d4ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.hero {
+    text-align: center;
+    background: #1d3557;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #00d4ff;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b4d8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #14213d;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.card h3 {
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.contact {
+    background: #eaf2f8;
+    text-align: center;
+    line-height: 2;
+}
+
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MyPortfolio</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Hello, I'm <span>vismay</span></h1>
+    <p>Computer Science Student | Web Developer | Tech Enthusiast</p>
+    <a href="#projects" class="btn">View My Projects</a>
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student passionate about technology,
+        programming, and web development. I enjoy learning new
+        technologies, solving problems, and building creative projects.
+        My goal is to become a skilled software developer.
+    </p>
+    <br>
+    <p><b>Education:</b> Bachelor of Computer Science</p>
+    <p><b>Interest:</b> Coding, Web Development, AI and Technology</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website showcasing my profile,
+            skills and achievements.</p>
+        </div>
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>A simple system to manage student records
+            and information.</p>
+        </div>
+        <div class="card">
+            <h3>Calculator App</h3>
+            <p>A basic calculator built using HTML,
+            CSS and JavaScript.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>HTML & CSS</h3>
+            <p>Creating structured and attractive websites.</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Building interactive web applications.</p>
+        </div>
+        <div class="card">
+            <h3>Python</h3>
+            <p>Programming and problem-solving.</p>
+        </div>
+        <div class="card">
+            <h3>C / C++</h3>
+            <p>Learning programming fundamentals and logic.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: vismay@gmail.com</p>
+    <p>Phone: +91 9888477385</p>
+    <p>Location: Goa, India</p>
+    <p>GitHub: github.com/vismay</p>
+    <br>
+    <a href="mailto:vismay@gmail.com" class="btn">Email Me</a>
+</section>
+
+<footer>
+    <p>© 2026 vismay | Computer Science Student</p>
+</footer>
+
+</body>
+</html>
